@@ -8,6 +8,21 @@ from sklearn.linear_model import Perceptron
 from sklearn.ensemble import RandomForestClassifier
 from keras.models import load_model
 
+import subprocess
+
+# Function to check if a module is installed
+def is_module_installed(module_name):
+    try:
+        __import__(module_name)
+        return True
+    except ImportError:
+        return False
+
+# Install joblib if it's not already installed
+if not is_module_installed('joblib'):
+    subprocess.check_call(['pip', 'install', 'joblib'])
+
+
 # Load models
 models = {
     # 'Decision Tree': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/Decision_Tree.joblib',
