@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+pip install joblib
 import joblib
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
