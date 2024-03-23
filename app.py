@@ -22,11 +22,9 @@ except subprocess.CalledProcessError as e:
 
 # Load models
 models = {
-    # 'Decision Tree': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/Decision_Tree.joblib',
-    'KNN': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/KNN.joblib',
-    'Quadratic Discriminant Analysis': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/Quadratic Discriminant Analysis.joblib',
-    'Perceptron': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/Perceptron.joblib',
-    # 'Random Forest': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/Random_Forest.joblib',
+    'KNN': 'saved_models/KNN.joblib',
+    'Quadratic Discriminant Analysis': 'saved_models/Quadratic Discriminant Analysis.joblib',
+    'Perceptron': 'saved_models/Perceptron.joblib',
 }
 from tensorflow.keras.models import load_model as load_keras_model
 
