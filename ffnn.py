@@ -6,11 +6,11 @@ import numpy as np
 
 # Dictionary to map model names to their file paths
 model_paths = {
-    'ffnn_model_top_10_features': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/ffnn_model_top_10_features.h5',
-    'ffnn_model_top_20_features': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/ffnn_model_top_20_features.h5',
-    'ffnn_model_top_30_features': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/ffnn_model_top_30_features.h5',
-    'ffnn_model_top_40_features': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/ffnn_model_top_40_features.h5',
-    'ffnn_model_top_50_features': 'D:/Major_Project/Streamlit_App/Major_Project/saved_models/ffnn_model_top_50_features.h5',
+    'ffnn_model_top_10_features': 'saved_models/ffnn_model_top_10_features.h5',
+    'ffnn_model_top_20_features': 'saved_models/ffnn_model_top_20_features.h5',
+    'ffnn_model_top_30_features': 'saved_models/ffnn_model_top_30_features.h5',
+    'ffnn_model_top_40_features': 'saved_models/ffnn_model_top_40_features.h5',
+    'ffnn_model_top_50_features': 'saved_models/ffnn_model_top_50_features.h5',
 }
 
 def load_trained_model(model_path):
