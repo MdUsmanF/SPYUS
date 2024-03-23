@@ -10,18 +10,15 @@ from keras.models import load_model
 
 import subprocess
 
-# Function to check if a module is installed
-def is_module_installed(module_name):
-    try:
-        __import__(module_name)
-        return True
-    except ImportError:
-        return False
+# Define the command to install requirements from requirements.txt
+command = "pip install -r requirements.txt"
 
-# Install joblib if it's not already installed
-if not is_module_installed('joblib'):
-    subprocess.check_call(['pip', 'install', 'joblib'])
-
+# Execute the command using subprocess
+try:
+    subprocess.check_call(command, shell=True)
+    print("Requirements installed successfully!")
+except subprocess.CalledProcessError as e:
+    print(f"Error occurred while installing requirements: {e}")
 
 # Load models
 models = {
